@@ -1,0 +1,10 @@
+x = 1
+def abc():
+    y = x
+    x = 2
+    return x+y
+print(x)
+print(abc())
+print(x)
+
+#we needed to declare x first

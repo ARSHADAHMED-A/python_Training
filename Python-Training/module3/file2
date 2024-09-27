@@ -1,0 +1,33 @@
+
+
+import os
+import sys
+from collections import defaultdict
+
+
+def count_xtensions(directory):
+    ext_count = defaultdict(int)
+
+    try:
+        for filename in os.listdir(directory):
+            _, ext = os.path.splitext(filename)
+            if ext:
+                ext_count[ext] += 1
+
+
+        for ext, count in ext_count.items():
+            print(f"{ext}: {count}")
+
+    except FileNotFoundError:
+        print(f"The directory '{directory}' does not exist.")
+    except PermissionError:
+        print(f"Permission denied to access '{directory}'.")
+
+
+if __name__ == "_main_":
+    if len(sys.argv) != 2:
+        print("Usage: python extcount.py <directory>")
+    else:
+        directory = sys.argv[1]
+        count_xtensions(directory)
+        

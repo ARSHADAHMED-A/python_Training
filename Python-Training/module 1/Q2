@@ -1,0 +1,5 @@
+x = 1
+def ab():
+    return x
+print(x)
+print(ab())

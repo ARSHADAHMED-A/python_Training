@@ -1,0 +1,7 @@
+x = 1
+def db():
+    x = 2
+    return x
+print(x)
+print(db())
+print(x)

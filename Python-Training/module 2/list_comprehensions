@@ -1,0 +1,41 @@
+'''list comprehension'''
+''''Q.26'''
+# op=list(zip([1, 2, 3],["a", "b", "c"]))
+# print(op)
+
+'''Q.27'''
+# def square(x):
+#     return x*x
+# op=list(map(square,range(5)))
+# print(op)
+
+'''Q.28'''
+# def even(x):
+#     return x%2==0
+# op=list(filter(even,range(10)))
+# print(op)
+
+'''Q.29'''
+# def arrays(a,b):
+#     result=[]
+#     for i in range(a):
+#         d=[None]*b
+#         result.append(d)
+#     return result
+# c=arrays(2,3)
+# print(c)      
+
+'''Q.35'''
+def valuesorts(d):
+    return [value for key,value in sorted(d.items())]
+
+result=valuesorts({'x':1,'y':2,'z':3})
+print((result))
+
+'''Q.36'''
+
+def invertdict(d): 
+    return {value: key for key, value in d.items()}
+
+result = invertdict({'x': 1, 'y': 2, 'z': 3})
+print(result) 

@@ -1,0 +1,6 @@
+'''using zip function'''
+# l1=[1,2,3]
+# l2=['a','b','c']
+# c=zip(l1,l2)
+# b=list(c)
+# print(b)
